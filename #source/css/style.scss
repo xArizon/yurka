@@ -1,0 +1,235 @@
+$text-font: "Raleway", sans-serif;
+@import "clearfix.scss";
+
+.wrapper {
+  background-image: url(../img/original_photo-thumb_650.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & .news--block {
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+
+    & .news--list {
+      width: 60%;
+
+      & .news--item {
+        width: 80%;
+        background-color: #c4c4c4;
+        box-shadow: rgba(0, 0, 0, 0.562) 7px 6px 3px 5px;
+        font-size: 2vmax;
+        font-family: $text-font;
+        margin: 10vmax 0;
+        opacity: 0.85;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        transition: all 5s ease;
+
+        & .responsive-picture {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+
+        & p {
+          font-size: 1.2vw;
+          letter-spacing: 1px;
+          padding: 2% 4%;
+          line-height: 2.5vmax;
+          text-align: justify;
+          transition: all 0.35s ease-in-out;
+        }
+
+        & h2 {
+          font-weight: 500;
+          padding: 5px 0;
+          word-spacing: 10px;
+          border-bottom: 0.5px solid #000;
+          text-align: center;
+          letter-spacing: 4px;
+        }
+        & a {
+          margin: 10px;
+          font-size: 1.4vw;
+          align-self: center;
+          height: auto;
+          letter-spacing: 5px;
+          color: #000;
+          border: 1px solid #000;
+          border-radius: 10px;
+          padding: 5px 10px;
+          transition: all 0.2s ease-in-out;
+        }
+        & a:hover {
+          background: #000;
+          color: #fff;
+          letter-spacing: 4px;
+          border-radius: 15px;
+          padding: 5px 13px;
+        }
+        & a:hover + p {
+          filter: blur(1px);
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+
+  & .menu {
+    height: 100vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.623);
+
+    & .block--menu {
+      width: 60%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 3;
+
+      & nav {
+        height: 50%;
+        width: 100%;
+        margin: 0 auto;
+
+        & ul {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: all 0.15s ease-in-out;
+
+          & li {
+            width: 100%;
+            height: 13%;
+            background-color: #fff;
+            transition: all 0.5s ease;
+
+            & a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 1vmax;
+              font-family: $text-font;
+              color: #000;
+              letter-spacing: 0.5vmax;
+              width: 100%;
+              height: 100%;
+
+              transition: all 0.3s ease;
+            }
+          }
+          & li:hover {
+            background: rgba(95, 79, 79, 0.534);
+            opacity: 1;
+          }
+        }
+        & ul:hover li {
+          opacity: 0.3;
+        }
+        & ul li:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.418);
+  z-index: 2;
+}
+
+@keyframes buttons {
+  20% {
+  }
+
+  30% {
+    box-shadow: inset #bbbaba 0px 0.7vmax 6px 15px;
+  }
+
+  50% {
+    box-shadow: inset #bbbaba 0px 0.8vmax 4px 16px;
+  }
+
+  100% {
+    box-shadow: inset #bbbaba 0px 0.9vmax 3px 17px;
+  }
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+
+    & .menu {
+      width: 100%;
+      height: 20vh;
+      justify-content: space-between;
+      flex-direction: row;
+
+      & a:nth-child(1) {
+        width: 25%;
+      }
+
+      & .block--menu {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        & nav {
+          & ul {
+            flex-direction: row;
+
+            & li {
+              height: 25%;
+              width: 60%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+}
