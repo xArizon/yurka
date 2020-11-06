@@ -149,6 +149,7 @@ h6 {
   display: block;
   max-width: 100%;
   height: auto;
+  background-size: cover;
 }
 .wrapper .news--block .news--list .news--item p {
   font-size: 1.2vw;
