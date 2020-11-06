@@ -40,6 +40,7 @@ $text-font: "Raleway", sans-serif;
           display: block;
           max-width: 100%;
           height: auto;
+          background-size: cover;
         }
 
         & p {
@@ -150,7 +151,9 @@ $text-font: "Raleway", sans-serif;
     }
   }
 }
-
+.header--burger {
+  display: none;
+}
 .wrapper::after {
   content: "";
   position: absolute;
@@ -198,34 +201,16 @@ $text-font: "Raleway", sans-serif;
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
   .wrapper {
-    flex-direction: column;
-
     & .menu {
-      width: 100%;
-      height: 20vh;
-      justify-content: space-between;
-      flex-direction: row;
-
-      & a:nth-child(1) {
-        width: 25%;
+      & .block--menu img {
+        visibility: hidden;
       }
-
-      & .block--menu {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-
-        & nav {
-          & ul {
-            flex-direction: row;
-
-            & li {
-              height: 25%;
-              width: 60%;
-            }
-          }
-        }
-      }
+    }
+    .header--burger {
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 20px;
     }
   }
 }
