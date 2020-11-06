@@ -147,9 +147,8 @@ h6 {
 }
 .wrapper .news--block .news--list .news--item .responsive-picture {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  background-size: cover;
 }
 .wrapper .news--block .news--list .news--item p {
   font-size: 1.2vw;
