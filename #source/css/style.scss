@@ -30,7 +30,7 @@ $text-font: "Raleway", sans-serif;
         font-size: 2vmax;
         font-family: $text-font;
         margin: 10vmax 0;
-        opacity: 0.85;
+        opacity: 1;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
@@ -38,9 +38,8 @@ $text-font: "Raleway", sans-serif;
 
         & .responsive-picture {
           display: block;
-          max-width: 100%;
+          width: 100%;
           height: auto;
-          background-size: cover;
         }
 
         & p {
@@ -101,8 +100,12 @@ $text-font: "Raleway", sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      align-items: center;
       z-index: 3;
+& a{
+  width: 80%;
 
+}
       & nav {
         height: 50%;
         width: 100%;
@@ -116,7 +119,7 @@ $text-font: "Raleway", sans-serif;
           justify-content: space-between;
           transition: all 0.15s ease-in-out;
 
-          & li {
+          & .link--item {
             width: 100%;
             height: 13%;
             background-color: #fff;
@@ -151,9 +154,7 @@ $text-font: "Raleway", sans-serif;
     }
   }
 }
-.header--burger {
-  display: none;
-}
+
 .wrapper::after {
   content: "";
   position: absolute;
@@ -163,6 +164,820 @@ $text-font: "Raleway", sans-serif;
   bottom: 0;
   background: rgba(255, 255, 255, 0.418);
   z-index: 2;
+}
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .wrapper {
+    & .news--block {
+      
+      & .news--list {
+        & .news--item {
+          & .responsive-picture {
+          }
+
+          & p {
+          }
+
+          & h2 {
+          }
+          & a {
+          }
+          & a:hover {
+          }
+          & a:hover + p {
+          }
+        }
+      }
+    }
+
+    & .menu {
+      & .block--menu {
+        height: 80%;
+        & nav {
+          & ul {
+            & .link--item {
+              & a {
+                font-size: 1.1vw;
+              }
+            }
+          }
+        }
+      }
+    }
+    .music--block {
+     
+    
+      & .music--list {
+       
+        & .music--item {
+        
+    
+          & .music--text {
+           
+          }
+          & .music--text:hover {
+           
+          }
+    
+          & .playBtn {
+           
+          }
+          & input {}
+           
+    & .lineVolume{
+     
+          }
+         
+    
+           
+          
+          & .restart {
+           
+          }
+          & .restart:hover {
+           
+          }
+          & .volume { background-size: contain;
+           flex: 0 0 2vw;
+          }
+        }
+      }
+    }
+  
+    .gallery--block {       
+      & .gallery--block_list {
+               & .gallery--block_item {     
+          & img {                  
+          }
+        } 
+        
+      }
+    }
+
+    .news--block {
+      
+    
+      & .news--block__item {
+       
+    
+        & .news--block__item__logo {
+        height: 20vw;
+          & img {
+          width: 100%;
+         
+          }
+        }
+        & .news--block__item__title {
+          
+        }
+    
+        & .news--block__item__text {
+         
+        }
+      }
+    }
+    
+  
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wrapper {
+    & .news--block {
+      & .news--list {
+        & .news--item {
+          & .responsive-picture {
+          }
+
+          & p {font-size: 1.3vmax;
+          }
+
+          & h2 {
+          }
+          & a {
+          }
+          & a:hover {
+          }
+          & a:hover + p {
+          }
+        }
+      }
+    }
+
+    & .menu {
+      & .block--menu {
+        height: 80%;
+        width: 80%;
+        & nav {
+          & ul {
+            & .link--item {
+              & a {
+                font-size: 1.5vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .music--block {
+     
+    
+      & .music--list {
+       
+        & .music--item {
+        
+    
+          & .music--text {
+           
+          }
+          & .music--text:hover {
+           
+          }
+    
+          & .playBtn {
+           display: none;
+          }
+          & input {}
+           
+    & .lineVolume{
+     
+          }
+         
+    
+            & .lineMus {
+              
+            }
+          
+          & .restart {
+           
+          }
+          & .restart:hover {
+           
+          }
+          & .volume { background-size: cover;
+            flex: 0 0 2vw;
+          }
+        }
+      }
+    }
+  
+    .gallery--block {       
+      & .gallery--block_list {
+               & .gallery--block_item { 
+                 width: 40%;   
+                 min-width: 100px; 
+                 margin: 40px 15px 15px 0;
+          & img {                  
+          }
+        } 
+        
+      }
+    }
+
+    .contacts--block {
+
+      & .contacts--block_main {
+        & .contacts--block_main_item {	
+          & .contacts--block_main_item_img {
+           height: 5vh;
+       }
+          & .contacts--block_main_item_text {
+            letter-spacing: 3.5px;
+          & a{
+            letter-spacing: 3.5px;
+          }
+          }
+      }
+    }	
+  }
+  
+  
+
+.news--block {
+      
+    
+  & .news--block__item {
+    justify-content: center;
+
+    & .news--block__item__logo {
+     flex: 0 0 50%;
+     height: 25vw;
+      & img {
+      width: 100%;
+     
+      }
+    }
+    & .news--block__item__title {
+      text-align: center;
+      flex: 0 0 70%;
+    }
+
+    & .news--block__item__text {
+     
+    }
+  }
+}
+
+
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {.wrapper {
+  & .news--block {
+    & .news--list {
+      & .news--item {
+        & .responsive-picture {
+        }
+
+        & p {
+          font-size: 1.3vmax;
+        }
+
+        & h2 {
+        }
+        & a {
+        }
+        & a:hover {
+        }
+        & a:hover + p {
+        }
+      }
+    }
+  }
+
+  & .menu {
+    
+    & .block--menu {height: 80%;
+     width: 80%;
+      & nav {
+        & ul {
+          & .link--item {
+            & a {
+              font-size: 1.5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .music--block {
+     
+    
+    & .music--list {
+     
+      & .music--item {
+      
+  
+        & .music--text {
+         
+        }
+        & .music--text:hover {
+         
+        }
+  
+        & .playBtn {
+         display: none;
+        }
+        & input {}
+         
+  & .lineVolume{
+    
+        }
+       
+  
+          & .lineMus {
+            
+          }
+        
+        & .restart {
+         
+        }
+        & .restart:hover {
+         
+        }
+        & .volume { background-size: cover;
+          flex: 0 0 2vw;
+        }
+      }
+    }
+  }
+
+  .gallery--block {       
+    & .gallery--block_list {
+      margin-top: 40px;
+             & .gallery--block_item { 
+               min-width: 80px;
+               width: 40%; 
+               margin: 25px 5px 5px 0;  
+               height: 180px; 
+        & img {                  
+        }
+      } 
+      
+    }
+  }
+
+  .contacts--block {
+
+		& .contacts--block_main {
+      & .contacts--block_main_item {	
+        & .contacts--block_main_item_img {
+         height: 5vh;
+     }
+        & .contacts--block_main_item_text {
+          letter-spacing: 3px;
+        & a{
+          letter-spacing: 3px;
+        }
+    		}
+		}
+  }	
+}
+
+.news--block {
+
+  & .news--block__item {
+    justify-content: center;
+
+    & .news--block__item__logo{
+flex: 0 0 50%;
+height: 25vw;
+      & img{
+width: 100%;
+      }
+    }
+    & .news--block__item__title{
+      font-size: 2.2vw;
+      flex: 0 0 70%;
+      text-align: center;
+    }
+    & .news--block__item__text{
+      font-size: 1.5vw;
+    }
+  }
+}
+
+  
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {.wrapper {
+  & .news--block {
+
+    & .news--list {
+      width: 55%;
+      & .news--item {
+        width: 100%;
+        & .responsive-picture {
+        }
+
+        & p {
+          font-size: 2vw;
+        }
+
+        & h2 {
+        }
+        & a {
+          font-size: 1.4vmax;
+        }
+        & a:hover {
+        }
+        & a:hover + p {
+        }
+      }
+    }
+  }
+
+  & .menu {
+    width: 35%;
+    & .block--menu {
+      height: 80%;
+      width: 80%;
+      & nav {
+        & ul {
+          & .link--item {
+            & a {
+              font-size: 1.8vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  .music--block {
+     
+    
+    & .music--list {
+      width: 65vw;
+     
+      & .music--item {
+      width: 100%;
+  
+        & .music--text {
+         
+           font-size: 1.5vw;
+         
+        }
+        
+  
+        & .playBtn {
+         display: none;
+        }
+        
+         
+  & .lineVolume{
+    height: 20%;
+        }
+       
+  
+         
+        
+        & .restart {
+         
+        }
+        & .restart:hover {
+         
+        }
+        & .volume { background-size: cover;
+          flex: 0 0 3vw;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+
+  .gallery--block {       
+    & .gallery--block_list {
+      margin-top: 50px;
+             & .gallery--block_item {     
+               width: 45%;
+               margin: 25px 3px 3px 0;
+               min-width: 100px;
+               height: 150px;
+        & img {                  
+        }
+      } 
+      
+    }
+  }
+
+  .contacts--block {
+
+		& .contacts--block_main {
+      & .contacts--block_main_item {	
+        & .contacts--block_main_item_img {
+         height: 5vh;
+     }
+        & .contacts--block_main_item_text {
+          letter-spacing: 2px;
+        & a{
+          letter-spacing: 2px;
+        }
+    		}
+		}
+  }	
+}
+
+.news--block {
+
+  & .news--block__item {
+    justify-content: center;
+
+    & .news--block__item__logo{
+flex: 0 0 50%;
+height: 25vw;
+      & img{
+width: 100%;
+      }
+    }
+    & .news--block__item__title{
+      font-size: 2.2vw;
+      flex: 0 0 70%;
+      text-align: center;
+    }
+    & .news--block__item__text{
+      font-size: 1.5vw;
+    }
+  }
+}
+
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {.wrapper {
+  & .news--block {
+    & .news--list {
+      & .news--item {
+        & .responsive-picture {
+        }
+
+        & p {
+          font-size: 2.5vw;
+        }
+
+        & h2 {
+        }
+        & a {
+          font-size: 1.5vmax;
+        }
+        & a:hover {
+        }
+        & a:hover + p {
+        }
+      }
+    }
+  }
+
+  & .menu {
+    & .block--menu {
+      width: 80%;
+      & nav {
+        & ul {
+          & .link--item {
+            & a {
+              font-size: 2.4vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .music--block {
+     
+    
+    & .music--list {
+     width: 70vw;
+      & .music--item {
+      
+  
+        & .music--text {
+         font-size: 1.8vw;
+        }
+        & .music--text:hover {
+         
+        }
+  
+        & .playBtn {
+         display: none;
+        }
+        
+         
+  & .lineVolume{
+        }
+       
+  
+        
+        
+        & .restart {
+         
+        }
+        & .restart:hover {
+         
+        }
+        & .volume { background-size: cover;
+       flex: 0 0 3vw;
+       height: 50%;
+        }
+      }
+    }
+  }
+
+  .gallery--block {       
+    & .gallery--block_list {
+             & .gallery--block_item {     
+               height: 100px;
+        & img {                  
+        }
+      } 
+      
+    }
+  }
+
+  .contacts--block {
+
+		& .contacts--block_main {
+      width: 50vw;
+      height: 30vh;
+      & .contacts--block_main_item {	
+        & .contacts--block_main_item_img {
+         
+     }
+        & .contacts--block_main_item_text {
+          font-size: 2.5vw;  
+          letter-spacing: 0.5px;
+          & a{
+            letter-spacing: 0.5px;
+          }
+    		}
+		}
+  }	
+}
+
+.news--block {
+
+  & .news--block__item {
+    justify-content: center;
+    overflow: auto;
+
+    & .news--block__item__logo{
+flex: 0 0 80%;
+height: 40vw;
+      & img{
+width: 100%;
+      }
+    }
+    & .news--block__item__title{
+      font-size: 3vw;
+      flex: 0 0 70%; 
+      text-shadow: 1.5px 1.5px 2px rgb(112, 95, 95);
+      text-align: center;
+    }
+    & .news--block__item__text{
+      font-size: 2.5vw;
+      padding: 30px;
+    }
+  }
+}
+}
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {.wrapper {
+  & .news--block {
+    & .news--list {
+      width: 75%;
+      & .news--item {
+        
+        & .responsive-picture {
+        }
+
+        & p {
+          font-size: 3vw;;
+        }
+
+        & h2 {
+        }
+        & a {
+          font-size: 2.5vw;
+        }
+        & a:hover {
+        }
+        & a:hover + p {
+        }
+      }
+    }
+  }
+
+  & .menu {
+    width: 30%;
+    & .block--menu {
+      height: 60%;
+      width: 85%;
+      & nav {
+        & ul {
+          & .link--item {
+            height: 15%;
+            & a {
+              font-size: 3vw;
+              letter-spacing: .5vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .music--block {
+     
+    
+    & .music--list {
+     width: 95%;
+      & .music--item {
+      height: auto;
+
+  
+        & .music--text {
+          font-size: 2.4vw;
+          letter-spacing: 1px;
+         
+        }
+        & .music--text:hover {
+         
+        }
+  
+        & .playBtn {
+         display: none;
+        }
+        & input {}
+         
+  & .lineVolume{
+    height: 5px;
+        }
+       
+  
+         
+         
+        
+        & .restart {
+         
+        }
+        & .restart:hover {
+         
+        }
+        & .volume {
+          display: none;
+      background-size: cover;
+        }
+      }
+    }
+  }
+
+  .gallery--block {       
+    & .gallery--block_list {
+             & .gallery--block_item {
+               height: 70px;     
+               min-width: 60px;
+        & img {                  
+        }
+      } 
+      
+    }
+  }
+
+  .news--block {
+
+    & .news--block__item {
+      justify-content: center;
+      overflow: auto;
+  
+      & .news--block__item__logo{
+  flex: 0 0 100%;
+  height: 50vw;
+        & img{
+  width: 100%;
+        }
+      }
+      & .news--block__item__title{
+        font-size: 4vw;
+        flex: 0 0 70%;
+        text-align: center;
+        text-shadow: 1.5px 1.5px 2px rgb(112, 95, 95);
+      }
+      & .news--block__item__text{
+        font-size: 3vw;
+        padding: 20px;
+      }
+    }
+  }
+}
 }
 
 @keyframes buttons {
@@ -180,41 +995,4 @@ $text-font: "Raleway", sans-serif;
   100% {
     box-shadow: inset #bbbaba 0px 0.9vmax 3px 17px;
   }
-}
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-  .wrapper {
-    & .menu {
-      & .block--menu img {
-        visibility: hidden;
-      }
-    }
-    .header--burger {
-      display: block;
-      position: relative;
-      width: 20px;
-      height: 20px;
-    }
-  }
-}
-
-/* Iphone 5 */
-@media (max-width: 320px) {
 }

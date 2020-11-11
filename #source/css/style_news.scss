@@ -6,12 +6,14 @@
   & .news--block__item {
     width: 80%;
     background: #c4c4c43f;
-    height: 85%;
+    height: 80%;
+    min-height: 400px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: flex-start;
     font-family: $text-font;
+    overflow: auto;
 
     & .news--block__item__logo {
       flex: 0 0 40%;
