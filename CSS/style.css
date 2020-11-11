@@ -111,11 +111,11 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  
+  overflow: auto;
 }
 .wrapper .news--block .news--list {
   width: 60%;
-  overflow: auto;
+  
 }
 .wrapper .news--block .news--list .news--item {
   width: 80%;
