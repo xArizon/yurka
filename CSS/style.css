@@ -287,16 +287,7 @@ h6 {
   opacity: 1;
 }
 
-.wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.418);
-  z-index: 2;
-}
+
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
