@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style_music.css" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <script src="js/music_js.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- @import "header.html"-->
+      <div class="music--block">
+        <div class="music--list">
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(0);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(0);"
+            /><button class="volume" onclick="hideVolume(0);"></button>
+            <audio src="Sektor/1.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+           
+            
+              <div class="restartText">
+                <div class="music--text" onclick="musicOn(0);">
+                  <span>Демобилизация</span>
+                </div>
+                <button class="restart" onclick="restart(0);"></button>
+              </div>
+           
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(1);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(1);"
+            />
+            <button class="volume" onclick="hideVolume(1);"></button>
+            <audio src="Sektor/4.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            
+              <div class="restartText">
+                <div class="music--text" onclick="musicOn(1);">
+                  <span>Солнышко лучистое</span>
+                </div>
+                <button class="restart" onclick="restart(1);"></button>
+              </div>
+           
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(2);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(2);"
+            />
+            <button class="volume" onclick="hideVolume(2);"></button>
+            <audio src="Sektor/5.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(2);">
+                <span>Взял вину на себя</span>
+              </div>
+              <button class="restart" onclick="restart(2);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(3);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(3);"
+            /><button class="volume" onclick="hideVolume(3);"></button>
+            <audio src="Sektor/6.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(3);">
+                <span>Туман</span>
+              </div>
+              <button class="restart" onclick="restart(3);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(4);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(4);"
+            />
+            <button class="volume" onclick="hideVolume(4);"></button>
+            <audio src="Sektor/7.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(4);">
+                <span>Пусть одежду ветер рвет</span>
+              </div>
+              <button class="restart" onclick="restart(4);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(5);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(5);"
+            />
+            <button class="volume" onclick="hideVolume(5);"></button>
+            <audio src="Sektor/8.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(5);">
+                <span>ГАИ</span>
+              </div>
+              <button class="restart" onclick="restart(5);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(6);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(6);"
+            />
+            <button class="volume" onclick="hideVolume(6);"></button>
+            <audio src="Sektor/9.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(6);">
+                <span>Ты со мною забудь обо всем</span>
+              </div>
+              <button class="restart" onclick="restart(6);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(7);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(7);"
+            />
+            <button class="volume" onclick="hideVolume(7);"></button>
+            <audio src="Sektor/10.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(7);">
+                <span>Пасха</span>
+              </div>
+              <button class="restart" onclick="restart(7);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(8);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(8);"
+            />
+            <button class="volume" onclick="hideVolume(8);"></button>
+            <audio src="Sektor/11.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(8);">
+                <span>Пора домой</span>
+              </div>
+              <button class="restart" onclick="restart(8);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(9);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(9);"
+            />
+            <button class="volume" onclick="hideVolume(9);"></button>
+            <audio src="Sektor/13.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(9);">
+                <span>Кума</span>
+              </div>
+              <button class="restart" onclick="restart(9);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(10);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(10);"
+            />
+            <button class="volume" onclick="hideVolume(10);"></button>
+            <audio src="Sektor/14.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(10);">
+                <span>Дурак</span>
+              </div>
+              <button class="restart" onclick="restart(10);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(11);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(11);"
+            />
+            <button class="volume" onclick="hideVolume(11);"></button>
+            <audio src="Sektor/15.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(11);">
+                <span>Life</span>
+              </div>
+              <button class="restart" onclick="restart(11);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(12);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(12);"
+            />
+            <button class="volume" onclick="hideVolume(12);"></button>
+            <audio src="Sektor/16.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(12);">
+                <span>План</span>
+              </div>
+              <button class="restart" onclick="restart(12);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(13);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(13);"
+            />
+            <button class="volume" onclick="hideVolume(13);"></button>
+            <audio src="Sektor/17.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(13);">
+                <span>Сельский кайф</span>
+              </div>
+              <button class="restart" onclick="restart(13);"></button>
+            </div>
+          </div>
+          <div class="music--item">
+            <button
+              class="playBtn animate-playBtn1"
+              onclick="musicOn(14);"
+            ></button>
+            <input
+              type="range"
+              class="lineVolume"
+              min="0"
+              max="100"
+              onchange="sound(14);"
+            />
+            <button class="volume" onclick="hideVolume(14);"></button>
+            <audio src="Sektor/18.mp3" onended="musicStop(0);">
+              <source />
+            </audio>
+            <div class="restartText">
+              <div class="music--text" onclick="musicOn(14);">
+                <span>Казачья</span>
+              </div>
+              <button class="restart" onclick="restart(14);"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
