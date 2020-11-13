@@ -20,7 +20,8 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     & .music--item {
       display: flex;
       flex-direction: row-reverse;

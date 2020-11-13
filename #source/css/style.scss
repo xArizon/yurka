@@ -214,6 +214,9 @@ $text-font: "Raleway", sans-serif;
         
     
           & .music--text {
+            & span{
+              font-size: 1.3vw;
+            }
            
           }
           & .music--text:hover {
@@ -331,7 +334,9 @@ $text-font: "Raleway", sans-serif;
         
     
           & .music--text {
-           
+            & span{
+              font-size: 1.4vw;
+            }
           }
           & .music--text:hover {
            
@@ -474,7 +479,9 @@ $text-font: "Raleway", sans-serif;
       
   
         & .music--text {
-         
+          & span{
+            font-size: 1.5vw;
+          }
         }
         & .music--text:hover {
          
@@ -621,7 +628,9 @@ width: 100%;
   
         & .music--text {
          
-           font-size: 1.5vw;
+          & span{
+            font-size: 1.8vw;
+          }
          
         }
         
@@ -760,7 +769,10 @@ width: 100%;
       
   
         & .music--text {
-         font-size: 1.8vw;
+          max-width: 100px;
+          & span{
+            font-size: 2.5vw;
+          }
         }
         & .music--text:hover {
          
@@ -906,8 +918,12 @@ width: 100%;
 
   
         & .music--text {
-          font-size: 2.4vw;
-          letter-spacing: 1px;
+          max-width: 50px;
+
+          & span{
+            letter-spacing: 1px;
+            font-size: 3.2vw;
+          }
          
         }
         & .music--text:hover {

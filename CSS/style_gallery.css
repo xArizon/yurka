@@ -305,6 +305,9 @@ h6 {
   .wrapper .menu .block--menu nav ul .link--item a {
     font-size: 1.1vw;
   }
+  .wrapper .music--block .music--list .music--item .music--text span {
+    font-size: 1.3vw;
+  }
   .wrapper .music--block .music--list .music--item .volume {
     background-size: contain;
     -webkit-box-flex: 0;
@@ -329,6 +332,9 @@ h6 {
   }
   .wrapper .menu .block--menu nav ul .link--item a {
     font-size: 1.5vw;
+  }
+  .wrapper .music--block .music--list .music--item .music--text span {
+    font-size: 1.4vw;
   }
   .wrapper .music--block .music--list .music--item .playBtn {
     display: none;
@@ -384,6 +390,9 @@ h6 {
     width: 80%;
   }
   .wrapper .menu .block--menu nav ul .link--item a {
+    font-size: 1.5vw;
+  }
+  .wrapper .music--block .music--list .music--item .music--text span {
     font-size: 1.5vw;
   }
   .wrapper .music--block .music--list .music--item .playBtn {
@@ -468,8 +477,8 @@ h6 {
   .wrapper .music--block .music--list .music--item {
     width: 100%;
   }
-  .wrapper .music--block .music--list .music--item .music--text {
-    font-size: 1.5vw;
+  .wrapper .music--block .music--list .music--item .music--text span {
+    font-size: 1.8vw;
   }
   .wrapper .music--block .music--list .music--item .playBtn {
     display: none;
@@ -545,7 +554,10 @@ h6 {
     width: 70vw;
   }
   .wrapper .music--block .music--list .music--item .music--text {
-    font-size: 1.8vw;
+    max-width: 100px;
+  }
+  .wrapper .music--block .music--list .music--item .music--text span {
+    font-size: 2.5vw;
   }
   .wrapper .music--block .music--list .music--item .playBtn {
     display: none;
@@ -631,8 +643,11 @@ h6 {
     height: auto;
   }
   .wrapper .music--block .music--list .music--item .music--text {
-    font-size: 2.4vw;
+    max-width: 50px;
+  }
+  .wrapper .music--block .music--list .music--item .music--text span {
     letter-spacing: 1px;
+    font-size: 3.2vw;
   }
   .wrapper .music--block .music--list .music--item .playBtn {
     display: none;
