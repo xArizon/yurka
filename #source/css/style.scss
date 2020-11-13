@@ -157,6 +157,7 @@ $text-font: "Raleway", sans-serif;
 }
 
 .wrapper::after {
+  height: 100%;
   content: "";
   position: absolute;
   top: 0;
