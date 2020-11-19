@@ -592,6 +592,7 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
     overflow: auto;
+    min-height: 100px;
   }
   .wrapper .news--block .news--block__item .news--block__item__logo {
     -webkit-box-flex: 0;
@@ -613,6 +614,9 @@ h6 {
   .wrapper .news--block .news--block__item .news--block__item__text {
     font-size: 2.5vw;
     padding: 30px;
+  }
+  .wrapper .news--block .news--block__item .news--block__item__text blockquote {
+    font-size: 2.4vw;
   }
 }
 /* Iphone 5 */
@@ -694,6 +698,10 @@ h6 {
     font-size: 3vw;
     padding: 20px;
   }
+  .wrapper .news--block .news--block__item .news--block__item__text blockquote {
+    font-size: 2.6vw;
+    width: 100%;
+  }
 }
 @-webkit-keyframes buttons {
   30% {
@@ -732,7 +740,7 @@ h6 {
   width: 80%;
   background: #c4c4c43f;
   height: 80%;
-  min-height: 400px;
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,6 +781,7 @@ h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
+  width: 90%;
   text-align: justify;
   padding: 40px;
   font-size: 1.2vw;
@@ -790,9 +799,10 @@ h6 {
 }
 .news--block .news--block__item .news--block__item__text blockquote {
   border-left: 6px solid #BFE2FF;
-  font-size: 16px;
+  font-size: 1.6vw;
+  width: 100%;
   font-style: italic;
-  margin: 16px;
+  text-align: justify;
   padding: 16px 24px;
   position: relative;
 }

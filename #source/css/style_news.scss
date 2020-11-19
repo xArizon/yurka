@@ -7,7 +7,7 @@
     width: 80%;
     background: #c4c4c43f;
     height: 80%;
-    min-height: 400px;
+    min-height: 300px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -35,6 +35,7 @@
 
     & .news--block__item__text {
       flex: 0 0 100%;
+    width: 90%;
       text-align: justify;
       padding: 40px;
       font-size: 1.2vw;
@@ -53,9 +54,10 @@
       }
       blockquote {
         border-left: 6px solid #BFE2FF;
-        font-size: 16px;
+        font-size: 1.6vw;
+        width: 100%;
         font-style: italic;
-        margin: 16px;
+        text-align: justify;
         padding: 16px 24px;
         position: relative;
     }

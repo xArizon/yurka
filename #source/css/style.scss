@@ -841,7 +841,7 @@ width: 100%;
   & .news--block__item {
     justify-content: center;
     overflow: auto;
-
+min-height: 100px;
     & .news--block__item__logo{
 flex: 0 0 80%;
 height: 40vw;
@@ -858,6 +858,10 @@ width: 100%;
     & .news--block__item__text{
       font-size: 2.5vw;
       padding: 30px;
+
+      & blockquote{
+        font-size: 2.4vw;
+      }
     }
   }
 }
@@ -993,6 +997,11 @@ width: 100%;
       & .news--block__item__text{
         font-size: 3vw;
         padding: 20px;
+        & blockquote{
+          font-size: 2.6vw;
+          width: 100%;
+          
+        }
       }
     }
   }
